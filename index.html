@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crochet By Riya | Handmade With Love</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#fffaf7;
+    color:#3d302b;
+    line-height:1.6;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#ffffff;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:16px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#9b5c55;
+}
+
+nav a{
+    text-decoration:none;
+    color:#3d302b;
+    margin-left:22px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#9b5c55;
+}
+
+/* HERO */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#fff1ec,#f9e4df);
+}
+
+.hero-content{
+    max-width:800px;
+    animation:fadeUp 1s ease;
+}
+
+.hero h1{
+    font-size:58px;
+    margin-bottom:15px;
+    color:#713f3a;
+}
+
+.hero h2{
+    font-size:25px;
+    font-weight:normal;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:19px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:5px;
+    transition:.3s;
+}
+
+.primary{
+    background:#9b5c55;
+    color:white;
+}
+
+.primary:hover{
+    transform:translateY(-4px);
+    background:#713f3a;
+}
+
+.secondary{
+    border:2px solid #9b5c55;
+    color:#9b5c55;
+}
+
+.secondary:hover{
+    background:#9b5c55;
+    color:white;
+}
+
+/* SECTIONS */
+
+section{
+    padding:80px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:45px;
+    color:#713f3a;
+}
+
+/* PRODUCTS */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    font-size:21px;
+    margin-bottom:7px;
+}
+
+.price{
+    color:#9b5c55;
+    font-size:19px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+/* ABOUT */
+
+.about{
+    background:#f8ebe7;
+}
+
+.about-content{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.feature{
+    background:white;
+    padding:30px 20px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.feature:hover{
+    transform:translateY(-6px);
+}
+
+.feature span{
+    font-size:40px;
+    display:block;
+    margin-bottom:10px;
+}
+
+/* INSTAGRAM */
+
+.instagram{
+    text-align:center;
+    background:#fff1ec;
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+}
+
+.contact-buttons{
+    margin-top:25px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#3d302b;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    .navbar{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav a{
+        margin:0 7px;
+        font-size:14px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero h2{
+        font-size:21px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .features{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:450px){
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .section-title{
+        font-size:29px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+🧶 Crochet By Riya
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>🧶 Crochet By Riya</h1>
+
+<h2>Handmade With Love ❤️</h2>
+
+<p>
+Beautiful handmade crochet creations,
+carefully crafted with love and creativity.
+</p>
+
+<a class="btn primary" href="#products">
+Shop Now
+</a>
+
+<a class="btn secondary"
+href="https://wa.me/91XXXXXXXXXX">
+Order on WhatsApp
+</a>
+
+</div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+<div class="container">
+
+<h2 class="section-title">
+Our Handmade Collection 🧶
+</h2>
+
+<div class="products">
+
+
+<!-- PRODUCT 1 -->
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+alt="Crochet Product">
+
+<div class="card-content">
+
+<h3>Crochet Flower</h3>
+
+<p>
+Beautiful handmade crochet flower.
+</p>
+
+<div class="price">
+₹299
+</div>
+
+<a class="btn primary"
+href="https://wa.me/91XXXXXXXXXX">
+Order Now
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 2 -->
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=800&q=80"
+alt="Crochet Bag">
+
+<div class="card-content">
+
+<h3>Handmade Crochet Bag</h3>
+
+<p>
+Stylish handmade crochet bag.
+</p>
+
+<div class="price">
+₹799
+</div>
+
+<a class="btn primary"
+href="https://wa.me/91XXXXXXXXXX">
+Order Now
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 3 -->
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80"
+alt="Handmade Gift">
+
+<div class="card-content">
+
+<h3>Crochet Gift</h3>
+
+<p>
+A beautiful handmade gift for someone special.
+</p>
+
+<div class="price">
+₹499
+</div>
+
+<a class="btn primary"
+href="https://wa.me/91XXXXXXXXXX">
+Order Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<h2 class="section-title">
+About Crochet By Riya ❤️
+</h2>
+
+<div class="about-content">
+
+<p>
+Welcome to Crochet By Riya!
+We create beautiful handmade crochet products
+with patience, creativity and lots of love.
+
+Every piece is carefully crafted to make
+your special moments even more beautiful.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Why Choose Crochet By Riya?
+</h2>
+
+<div class="features">
+
+<div class="feature">
+
+<span>🧶</span>
+
+<h3>100% Handmade</h3>
+
+<p>
+Every product is carefully handmade.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<span>❤️</span>
+
+<h3>Made With Love</h3>
+
+<p>
+Created with care and attention.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<span>✨</span>
+
+<h3>Unique Designs</h3>
+
+<p>
+Beautiful and creative designs.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<span>🎁</span>
+
+<h3>Perfect Gifts</h3>
+
+<p>
+Perfect for birthdays and special occasions.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INSTAGRAM -->
+
+<section class="instagram">
+
+<div class="container">
+
+<h2 class="section-title">
+Follow Us On Instagram 📸
+</h2>
+
+<p>
+See our latest handmade crochet creations.
+</p>
+
+<br>
+
+<a
+class="btn primary"
+href="https://instagram.com/YOURUSERNAME"
+target="_blank">
+
+Visit Instagram
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<h2 class="section-title">
+Let's Create Something Beautiful ✨
+</h2>
+
+<p>
+Want to place an order or have a question?
+Contact Crochet By Riya directly.
+</p>
+
+<div class="contact-buttons">
+
+<a
+class="btn primary"
+href="https://wa.me/91XXXXXXXXXX">
+
+💬 WhatsApp Us
+
+</a>
+
+
+<a
+class="btn secondary"
+href="mailto:YOUR-EMAIL@gmail.com">
+
+📧 Email Us
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Crochet By Riya. All Rights Reserved.
+</p>
+
+<p>
+Handmade With Love ❤️
+</p>
+
+</footer>
+
+</body>
+</html>
